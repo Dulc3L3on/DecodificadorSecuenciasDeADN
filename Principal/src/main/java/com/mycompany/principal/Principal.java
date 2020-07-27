@@ -5,6 +5,7 @@
  */
 package com.mycompany.principal;
     import Backend.Decodificador;
+    import Frontend.GUI_decodificador;
 
 /**
  *
@@ -17,9 +18,13 @@ public class Principal {
      */
     public static void main(String[] args) {
         Decodificador decodificadorEnAccion = new Decodificador();
+        //GUI_decodificador guiDecodificador = new GUI_decodificador();
         
+        decodificadorEnAccion.iniciarProceso();//fase 1
         
-        decodificadorEnAccion.iniciarProceso();//fase 1                
+        //guiDecodificador.setLocationRelativeTo(null);//segunda fase
+        //guiDecodificador.setVisible(true);
+           
         
     }
     
