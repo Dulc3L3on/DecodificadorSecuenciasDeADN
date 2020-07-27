@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.mycompany.principal;
+    import Backend.Decodificador;
 
 /**
  *
@@ -15,7 +16,10 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            
+        Decodificador decodificadorEnAccion = new Decodificador();
+        
+        
+        decodificadorEnAccion.iniciarProceso();//fase 1                
         
     }
     

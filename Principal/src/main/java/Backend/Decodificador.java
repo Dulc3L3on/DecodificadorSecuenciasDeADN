@@ -11,4 +11,12 @@ package Backend;
  */
 public class Decodificador {
     
+    Receptor receptor = new Receptor();
+    Procesador procesador = new Procesador();
+    
+    public void iniciarProceso(){
+        receptor.presentrarPrograma();        
+        receptor.solicitarDatos();        
+        receptor.mostrarResultados(procesador.decodificarADN(receptor.retornarSecuencias()));
+    }
 }
